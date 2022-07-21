@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="series.css">
+    <link rel="stylesheet" href="series.css" />
   </head>
   <body>
     <div id="navbar">
@@ -25,99 +25,206 @@
           <div>stats</div>
           <div id="space"></div>
           <div>Edition_In</div>
-          <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAeFBMVEX///8BZf8AYv9QhP+7xtUdavQAWP/m6/8AY/8AYP+Luf9Ri/9Phf8AXP9gmv+sy/8IdP+0yPAAaP/g7f9akf34+PcxcvjZ4OYnbfY1d/rk6OyZvf7s7/NxnOrH0d1Wj/+w0P/E0eoDbP/v9f7p8f+TsPMygfluoP++e9OmAAACN0lEQVR4nO3dSXLCMBBAUcxgEGAmMyZhHnL/G4YtLgpEk2p1U//t5a5vkwUBoVoNAAAAAAAAAAAAAABPym6v8VB/MLSwTuhnXS9C/aEQitE49TqxdZ5FCJMy8TqpMsTMu06czpKuE+sWcQM780XSdWK9yDuatZpJ14k16rKB2usIJJBAAgkkkEACCSSQQAIJJJBAAgkkkEACCSSQQAIJtBDYFw7UXic2iP28brlJuk5sGPuJ6+or6Tq5Udwtzb8TrxMbT0Ln6bhOvk29Tq6czltPLFd37qf2OrnZovnE5u7fg/Y6AAAAANYo72Pwsm/Cyzz1fQxe9k14mae+j8HNvgkv89T/le7mswkv8wgk0Pg8Agk0Po9AAo3PI5BA4/MIJND4PAIJND6PQAKNzyOQQOPzCCTQ+LzPD9Tex+Bm34SXeer7GPzsm/AyT30fg599E17m6e9jYN8EAAAA8CnMnTdRvcrurTyD501Ur5Jf9m8E2jxvonKVw07cZ/W8icpVtkdpoNXzJipXOZykgWbPm7hVtKWBZn/y6FZOIIEEEkgggQQSSCCBBBJIIIEEEkgggQQSSCCBBBJIoIVA7XMj1AO1z41QD9Q+N0I9UPvcCP1A5XMj9AOVz41IEKh7bkSKQFUEEmgcgQQa9/GB0e9CvAZGvwu5FdwE7gRf+M2y+kj8fVF1F8kjDOd/+t10BftDxLuQyvMLv34e4PVFuj0U+SvC6Oypr1Y7ntqvOfl5fQIAAAAAAHy+PwUsdJt44SJvAAAAAElFTkSuQmCC" alt=""></div>
-          <div><img src="data:image/png;base64,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" alt=""></div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAeFBMVEX///8BZf8AYv9QhP+7xtUdavQAWP/m6/8AY/8AYP+Luf9Ri/9Phf8AXP9gmv+sy/8IdP+0yPAAaP/g7f9akf34+PcxcvjZ4OYnbfY1d/rk6OyZvf7s7/NxnOrH0d1Wj/+w0P/E0eoDbP/v9f7p8f+TsPMygfluoP++e9OmAAACN0lEQVR4nO3dSXLCMBBAUcxgEGAmMyZhHnL/G4YtLgpEk2p1U//t5a5vkwUBoVoNAAAAAAAAAAAAAABPym6v8VB/MLSwTuhnXS9C/aEQitE49TqxdZ5FCJMy8TqpMsTMu06czpKuE+sWcQM780XSdWK9yDuatZpJ14k16rKB2usIJJBAAgkkkEACCSSQQAIJJJBAAgkkkEACCSSQQAIJtBDYFw7UXic2iP28brlJuk5sGPuJ6+or6Tq5Udwtzb8TrxMbT0Ln6bhOvk29Tq6czltPLFd37qf2OrnZovnE5u7fg/Y6AAAAANYo72Pwsm/Cyzz1fQxe9k14mae+j8HNvgkv89T/le7mswkv8wgk0Pg8Agk0Po9AAo3PI5BA4/MIJND4PAIJND6PQAKNzyOQQOPzCCTQ+LzPD9Tex+Bm34SXeer7GPzsm/AyT30fg599E17m6e9jYN8EAAAA8CnMnTdRvcrurTyD501Ur5Jf9m8E2jxvonKVw07cZ/W8icpVtkdpoNXzJipXOZykgWbPm7hVtKWBZn/y6FZOIIEEEkgggQQSSCCBBBJIIIEEEkgggQQSSCCBBBJIoIVA7XMj1AO1z41QD9Q+N0I9UPvcCP1A5XMj9AOVz41IEKh7bkSKQFUEEmgcgQQa9/GB0e9CvAZGvwu5FdwE7gRf+M2y+kj8fVF1F8kjDOd/+t10BftDxLuQyvMLv34e4PVFuj0U+SvC6Oypr1Y7ntqvOfl5fQIAAAAAAHy+PwUsdJt44SJvAAAAAElFTkSuQmCC"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX19fUUFBQAAAD39/cSEhL8/PwWFhbz8/P9/f0PDw8ICAhTU1MGBgbd3d1ubm7r6+vAwMDj4+NpaWnY2NhQUFAtLS1xcXGRkZEbGxvIyMiampqGhoYjIyPh4eGnp6c1NTW0tLRjY2N9fX3FxcVGRkZaWlo9PT0pKSkhISF5eXnR0dEzMzOMjIyXl5exsbGjo6M+yr8wAAAMw0lEQVR4nO1dC1fiOhCGmbRNS7EgoggCgoCKr///7+4kbZO0POTRblpvvz1nj7IL5GPek2RotRo0aNCgQYMGDRo0aNCgQYMGDRo0aNCgQYMG/ycgwdEQv9peUoEgbrwVdV++x5/L9/f35eRr1ttGLcGz9Qd4kuSil6/beQA5DDuT527Lqbks0cHt10qQ81mbMdaOIX7yffHwx7IXkSxtr/MyCN3cToYAQUpsF8wnlrc9jyN6ttd7NtCJZptYdjlWmd/pnwHY54A7thd8DoT/4NHnSNBrM5fF6nlAkvLfARZbjq26OB5apRNNAvDzshNMWSJD1lZ/iwcSjvUgSAbofTHw3R2hxQzb7RzDBAD3fV4HIXrIXzawq5JSVSXHHctMOUMwrkGEJAHeQ7Bv/VIdXWF4u9JN4MNmwG0z+AXoPD4B28NAxgUTe2OI68O40tGRXOiXdKCp2Fj8R8b2xWTWexx0u93Btvf9cLtKWGZjB7nVTlRhiugtDAtMGJLwNpNeH9OEO87BOUaP404IuxYLr9vKitHpbsB1MwwpCqx+BkRJWKj6j/InehCj70WYjSr0pAC+K2iMwgU62yfIq1zwPiAiu/4RJWN6jhN9fRBH078KY+Re5cTokY/xg4yPIX4PfaJ3LONEkZx/i+hiajeDh+olcUQw50MBJn1+giSQ8u7vUS4Dgs+qKSriY3aNPixO4heD4wM9XZuwkCKvVrWB3cAkyKD97JyRnSDy7gqyijqulBQxegpNFwPr/jkEpdchMZq5kA/PlaJ4B9pVUPryeUFEQ6c3AtPhwLYy/hSdd8h9+pesDfl0Y75O8FQRS6Q4MQMjoPn+hTmJR26VdEHn5bA+S9VLA7a6ZuoVjrpX2A+ugSmXyuCnEqaIuALt5/3R4JpgjXxhKCqDQRVk6IyVfxBp9nUE0Wt1QHcA4M46Q/LyU9DtMwaPV/ZaECPT3cCP/fTNWWiGLsz4tY1PxO5IJQ+MuX3bUqR01PjE73nrSu+H5Jp7OiwyWNruTuFKJSIsnBeyFuQTSEIGcxl07RJ0nkFr1HVeRoHi4sp3U98FN1YjBkUKlY+KcqCol93qCGtZiPiirdCfF5dk8aWmKI3bGvjaEGGvuAYSRm/an4LN5tsgreuZC50iO2T8B7Q7HVtLT4XT05/0Y4GrIH0fKiH6c2s7Nth6SpfBgk6R1oKiXjESJVuJDT6qFLJNVljsa0dv2tcsbfkafq8YBkOn4HLV+dQW8Gqpe4r46qcMhTco+NUHhppa6WegXENaNsG0aG+Azl2aD7rF5RLnQRSGSWoV3hW+meI5P0pNgzsrrgYdVY6zMso4r5+WGIyxqPCX/x2I6KqtwjK6DehsfGUERQbb01fQVWWcPywh6fCcidaRwh3ZCUDsKTspp8KhysxN7NxOCaUcTVndFOxrV7OxoKXIbzTDcsyEh2lS6I9sxHwdrxj0S3kHvlJpL8XbUt7iOFT2X1ZWJbNCm1mNihX+qpzyxnnQdtD79wzRU3ljuC7neIjzrRl+//twgZFiCLcX7ab9/ha9kr31L28/BbW7UFL9hrrbbONwhqpuiOHk7zMs5+1tM+zqt1/+TYY6p4L7khjqfrON1Dv2pfLkb7go5+2NTRGYWWDoyUNQwhaDknZqjSofnm1E/KeUof9RTk+aLzXDFxvFxSZmyJjvl9Nk0LsiVo4sIF+oXZmS3p+/qtzet7A74/FPI2ss4/3Jl6Vv4H/YKC3ESaiUYSlJjbFPGnbKyXx/XUDKMFiV4ctlmyTuOcOnlYapLi7aQfFmgugswviWFCt83+fEJTgr3cYofgVoFKCW9vLRUYdCZN5W8Bo8ozpkJQXc40BRoKo+hlt4pwb5uy6xLR1WUN6csTL6KNFIN/WfLW0C806oWzVFf8qo0+422DrchrPyfAGiaseKs8K2GPaNcz2FXgFBNI9FwczaWQxnbZw2KTQkenxh6Edk67iJ4dCZuKpU4FkFhxKm9Gg13NhI2SQw6ezHN7IL3bzgpnbYvHfhfIG6Blpkt8bR0b7tb2ye3MPI1xddi9tjw9arr/2MhQaGuZZPfSwq2BTjECjn/tSO1B9aPgQdBeq2jFtUZxgzZ8e/iz5tdeZiyBKVSyiqxIiefHWUXSiGXS1F702bjM+mV68HPccIhXaabNkFGW1bUqnN9WWOPmQiXvDW/o2SFr8LmZpcAovrhIgtPgNjFpEvcm7bUmxNQc9Hoqh43Xr4t3FMXzTzrdMTpeoPGLM8rtuI4s/GhWlmr6jIAinFMq5hU25z4bJQEGTpOShxtLoqIzIwejXvKMPauzCE8bHhRYs/WX05RDFn3lWH+fQSMSKKzkx6vUHsilbiBqkAynMhxk3ZIHg+l6KHfLrKDDoJ19aKpj1A/mUEMXGde3mmnqLz7WcIkn8u8BLOlRDDPdKbSvE4KFKxj5dz1uf0F6aii+Dq+tWxw5ZsrNxDZoU+3E5566Twj473BRkdSDWhZ/t6ZQaOQVHO8wJYnjL8A7k3G4Fv2rF6mQpJUY5GmuhL3XKSHnF8H8gZnl5eFKiex6OvVz1bSryAqyOGVFTceZYtoOxpZCdbAdzNIh5bZNb3yGEf3Hu5DyAw8gWXIj7TQweEourneWJWqGONKS2Z6ozcmCGXhcDWs27LEWMRteTkQNp+732YH4Ulbv76xmuY1xrpDfrv67G1elFoIh+8QtucUJZMw4L5zfil7wlinCSKXrSdLcVcUz9vffSJjOeh8agPL6ktIk6fIIQbe1IUi4huwXfbeSTz6Iar9XqxWN/N/UMz6RgMt7wvkkBdVguPKj5BxK6cgkM1o9Vpp1T+7HH8sYn5gYS/I7kUIWUKJOh+ZmhYGhdJgmH8Kdgti9GJFuQ74vmPLDeOlSXzIdv7pkOSOg9fpLli9GSOVBJSJBsUEmSxpdqVItlab74/vh2BK8z1IbUvp/9hBlchRadrDGqCW8v9KccbP+06keNIxpemFKeaIhMz6nr9kcG5DTdWGdJ78+jhSZ3sU+vai8Td3gyEgirdQ6Ko2ukU+tvDzMhQBjctyxkA5SqzOWSG1B1iyAJoL7v5/I4ohvo5pKm5Z4mgYTnHQQcf78Uk76MMKf7B3XO0pw5x+m9h4pfITHefXdYNgXMgsrLnG7IwHcGNQcKMybmmnZ8+319nkUcNjLlYOudNKS6q0Gmk5Ky1Ha9f47GzPkVCUVj5cQLA7iY9kbQeWiX2h7Cr5cZAo9sKzKyXIzyp/uv2fpbr1cebkFrgDjfrm6/nbUTJKh6RAzpE0WSYnQvuuuRRKyBFieSrH1pRFPX7UeQlA2l/f950aEwr3DViy0FjP5JvtjhxYdif+0cp3lfpizKkQmI8sfu07obQ03m2fZMlKNPwnfK6PvBEuZSbDc4MnyONERb86JTbaoNy0fys6DxDSocWlWk6nom4mlAh4mCWy6RHrSM8nL4dc6T1p4je0UiRo1hHjvhoDPrMWd9eirUjiVvINnyO1JvM4tm3i0GOZq3PBSqGZqMxTuKSM2eL+lEUh2gzG6YHBShJ1lFRk2mtvzI0bLFmDAXHjrpsfJye+PqTWnpUQbF9iqYqKdYugRMUU4/6q6bWVFGxkw4L/1WGrqw06sfRGA6tuBxkaXtP4xJgy1vvLTAOKOpt7WSIsbvZQyzxshln67Yr1Ls5HWnQOCZJ3Yirp7uJKZ7GUDYZba/4XJBM7vLfBLazeZz+ID1q7Si2hEc9XmmYv0NJYyzKBIo0PNPL2Nl6NcnKvf6agRS1c2D33OCppVjLxoZI4E7dda1Yq/g0oIqLJ6GWUpRfQ3O4rWhIUFKso0cVafgpepo0NmwfZ7gEZmMjZcN2f0wSIKJYvwROVhonH/IQUqxlpXEyxTqWxKLSWOfPeB4kmDT8a8YxTsN3DwfupSizm7oRFCI5NS7WtNIQfd+40jihiSoqjUX9WsUUNNbZg7qH+MmwUcPGRtJHPZGhKyZX1pPioQ7jzmPM2myUq5A2NvacxN15xN6XnFwBlGn4aQwr8iWDZyOu+g9ZYEaEq1oSJBDFAyVx5tHA7dbQmQocaWyYDEO3W0MrTJAEDWMTXFFUX8kYjupphDHiSuOQg5EPhtd9L6ptYJyjursyTElLgnUrEbMQFA8VU4ycTK0lGONIpcGCUbd+RX4ecaWxS04eQCEvipa+7qtQ7O+jMjd8G9Q0Du5gP0V4G9Rvx/sA0DyUkkbCYPR3CArkpchCt86Bfg/y7oa8aP3DRBaSIku1NBzVNdk+AiMuskCECdsLKhyGuxEStL2cUiDPwJGS1ruaOAb0iGIQAuWif5ShODj907mbRH8pDO5A3omzvYhS8bfZSfwPKDZo0KBBgwYNGjRo0KBBgwYNGjRoUFn8Bz1jh7vZvzqTAAAAAElFTkSuQmCC"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
     <div id="head1">
-        <div>FIXTURES AND RESULTS</div>
+      <div>FIXTURES AND RESULTS</div>
     </div>
     <div id="add">
-        <img src="https://tpc.googlesyndication.com/simgad/11330857671321266686?" alt="">
+      <img
+        src="https://tpc.googlesyndication.com/simgad/11330857671321266686?"
+        alt=""
+      />
     </div>
     <div id="container">
-        <div id="left">
-            <div id="subnav">
-                <div><a href="current.html">Current cricket</a> </div>
-                <div><a href="future.html">Future series / Tournament</a> </div>
-                <div><a href="recent.html">Recently Concluded</a></div>
-            </div>
-            <div id="series">
-                <div id="leftseries">
-                    <div>
-                        <h3>INTERNATIONAL TOURS</h3>
-                        <p>England v India</p>
-                        <p>England v South Africa</p>
-                        <p>Sri Lanka v Pakistan</p>
-                        <p>Ireland v New Zealand</p>
-                        <p>West Indies v Bangladesh</p>
-                        <p>West Indies v India</p>
-                        <p>IRE Tri-Series (Women)</p>
-                        <p>SA-W in England</p>
-                        <p>Zimbabwe v Bangladesh</p>
-                        <p>Scotland v New Zealand</p>
-                        <h3 id="inter">INTERNATIONAL TOURNAMENTS</h3>
-                        <p>Men's T20 WC QLF</p>
-                        <p>T20WC Europe QLF-A</p>
-                    </div>
-                  
-                </div>
-                
-                <div id="rightseries">
-                    <div>
-                        <h3>ICC TOURNAMENTS</h3>
-                        <p>ICC Women's Championship</p>
-                        <p>Men's Cricket World Cup League 2</p>
-                        <p>CWC Challenge League Group A</p>
-                        <p>CWC Challenge League Group B</p>
-                        <p>ICC CWC Super League</p>
-                        <p>ICC World Test Championship</p>
-                        <h3>T20/T10 TOURNAMENTS</h3>
-                        <p>Vitality Blast</p>
-                        <p>TNPL 2022</p>
-                        <h3>AFGHANISTAN DOMESTIC</h3>
-                        <p>Shpageeza Cricket League</p>
-                        <h3>AUSTRALIA DOMESTIC</h3>
-                        <p>Sheffield Shield</p>
-                        <p>The Marsh Cup</p>
-                        <p>BBL 2022</p>
-                        <p>WBBL 2022</p>
-                        <p>WNC League</p>
-                        <h3>ENGLAND DOMESTIC</h3>
-                        <p>County Div1</p>
-                        <p>County Div2</p>
-                        <p>100 (Men's)</p>
-                        <p>100 (Women's)</p>
-                        <p>RL Cup</p>
-                        <p>Vitality Blast</p>
-                        <p>RHF Cup</p>
-                        <h3>INDIA DOMESTIC</h3>
-                        <p>TNPL 2022</p>
-                        <h3>SRI LANKA DOMESTIC</h3>
-                        <p>LPL 2022</p>
-                        <p>Major Clubs LA</p>
-                        <h3>WEST INDIES DOMESTIC</h3>
-                        <p>CPL 2022</p>
-                        <p>WCPL 2022</p>
-                        <p>WICB 4-day</p>
-                    </div>
-                </div>
-            </div>
-            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM6P4-ssbILu2WFYfmnmFWZadf6Kkz_LhHg&usqp=CAU" alt=""> Download ICC's Future tours programme</div>
+      <div id="left">
+        <div id="subnav">
+          <div><a href="current.html">Current cricket</a></div>
+          <div><a href="future.html">Future series / Tournament</a></div>
+          <div><a href="recent.html">Recently Concluded</a></div>
         </div>
-        <div id="right">
+        <div id="series">
+          <div id="leftseries">
             <div>
-                <img src="https://tpc.googlesyndication.com/simgad/464404564373235981?" alt="">
+              <h3>INTERNATIONAL TOURS</h3>
+              <p>England v India</p>
+              <p>England v South Africa</p>
+              <p>Sri Lanka v Pakistan</p>
+              <p>Ireland v New Zealand</p>
+              <p>West Indies v Bangladesh</p>
+              <p>West Indies v India</p>
+              <p>IRE Tri-Series (Women)</p>
+              <p>SA-W in England</p>
+              <p>Zimbabwe v Bangladesh</p>
+              <p>Scotland v New Zealand</p>
+              <h3 id="inter">INTERNATIONAL TOURNAMENTS</h3>
+              <p>Men's T20 WC QLF</p>
+              <p>T20WC Europe QLF-A</p>
             </div>
-            <div id="readers">
-              <!-- readers section -->
-            </div>
+          </div>
+
+          <div id="rightseries">
             <div>
-                <img src="https://tpc.googlesyndication.com/simgad/16726230574551757109?" alt="">
+              <h3>ICC TOURNAMENTS</h3>
+              <p>ICC Women's Championship</p>
+              <p>Men's Cricket World Cup League 2</p>
+              <p>CWC Challenge League Group A</p>
+              <p>CWC Challenge League Group B</p>
+              <p>ICC CWC Super League</p>
+              <p>ICC World Test Championship</p>
+              <h3>T20/T10 TOURNAMENTS</h3>
+              <p>Vitality Blast</p>
+              <p>TNPL 2022</p>
+              <h3>AFGHANISTAN DOMESTIC</h3>
+              <p>Shpageeza Cricket League</p>
+              <h3>AUSTRALIA DOMESTIC</h3>
+              <p>Sheffield Shield</p>
+              <p>The Marsh Cup</p>
+              <p>BBL 2022</p>
+              <p>WBBL 2022</p>
+              <p>WNC League</p>
+              <h3>ENGLAND DOMESTIC</h3>
+              <p>County Div1</p>
+              <p>County Div2</p>
+              <p>100 (Men's)</p>
+              <p>100 (Women's)</p>
+              <p>RL Cup</p>
+              <p>Vitality Blast</p>
+              <p>RHF Cup</p>
+              <h3>INDIA DOMESTIC</h3>
+              <p>TNPL 2022</p>
+              <h3>SRI LANKA DOMESTIC</h3>
+              <p>LPL 2022</p>
+              <p>Major Clubs LA</p>
+              <h3>WEST INDIES DOMESTIC</h3>
+              <p>CPL 2022</p>
+              <p>WCPL 2022</p>
+              <p>WICB 4-day</p>
             </div>
+          </div>
         </div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM6P4-ssbILu2WFYfmnmFWZadf6Kkz_LhHg&usqp=CAU"
+            alt=""
+          />
+          Download ICC's Future tours programme
+        </div>
+      </div>
+      <div id="right">
+        <div>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/464404564373235981?"
+            alt=""
+          />
+        </div>
+
+        <!-- readers section -->
+        <div id="readers">
+          <div id="readhead">
+            <h3>Readers recommend</h3>
+            <p>Curated Tweets by @ESPNcricinfo</p>
+          </div>
+
+          <div id="readcont">
+            <div>
+              <h3>name</h3>
+              <p>description</p>
+              <img
+                src="https://pbs.twimg.com/card_img/1545116740123754498/9M6OG501?format=jpg&name=600x314"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>name</h3>
+              <p>description</p>
+              <img
+                src="https://pbs.twimg.com/card_img/1545116740123754498/9M6OG501?format=jpg&name=600x314"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>name</h3>
+              <p>description</p>
+              <img
+                src="https://pbs.twimg.com/card_img/1545116740123754498/9M6OG501?format=jpg&name=600x314"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>name</h3>
+              <p>description</p>
+              <img
+                src="https://pbs.twimg.com/card_img/1545116740123754498/9M6OG501?format=jpg&name=600x314"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>name</h3>
+              <p>description</p>
+              <img
+                src="https://pbs.twimg.com/card_img/1545116740123754498/9M6OG501?format=jpg&name=600x314"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="readfoot">
+            <p><a href="">Embed</a></p>
+            <p><a href="">View on twitter</a></p>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/16726230574551757109?"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
     <!-- footer section -->
+    <div id="foot1">
+      <div id="b1l">
+        <div>SITEMAP</div>
+        <div>FEEDBACK</div>
+        <div>RSS</div>
+        <div>ABOUT US</div>
+        <div>CAREERS</div>
+        <div>PRIVACY POLICY</div>
+        <div>TERMS OF USE</div>
+      </div>
+      <div id="b1r">
+        <div>
+          <img
+            src="https://i.imgci.com/espncricinfo/redesign/espn-family-logo_3x.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="foot2">
+      <div id="b2l">
+        <div>INTEREST BASED ADS</div>
+        <div>YOUR CALIFORNIA PRIVACY RIGHTS</div>
+        <div>CHILDREN’S ONLINE PRIVACY POLICY</div>
+        <div>ABOUT NIELSEN MEASUREMENT</div>
+      </div>
+      <div id="b2r">
+        <div>© ESPN SPORTS MEDIA LTD.</div>
+      </div>
+    </div>
   </body>
 </html>
