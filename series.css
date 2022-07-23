@@ -132,7 +132,7 @@
 }
 #readers{
   margin-top: 30px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100%;
   height: 800px;
 }
